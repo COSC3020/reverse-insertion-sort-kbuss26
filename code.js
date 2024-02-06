@@ -1,3 +1,10 @@
+/*
+    Keifer Buss 
+    COSC-3020-01 
+    Last modified Feb. 05 2024
+    Sources: Given code for original insertion sort
+*/
+
 function insertionSortReverse(array) {
     for (var i = array.length - 1; i >= 0; i--) {
         console.log(array);
