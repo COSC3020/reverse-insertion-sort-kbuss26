@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/Bi-S25fM)
 # Reverse Insertion Sort
 
 Consider the code for insertion sort we covered in class:
@@ -36,3 +37,20 @@ constant factors.
 Describe your reasoning and the conclusion you've come to. Your reasoning is
 most important -- you can easily find the answer, but you need to demonstrate
 that you've understood the concept. Add your answer to this markdown file.
+
+### Response
+
+We can start by determining that the insertion sort algorithm's average case 
+must be between its best case of $\Theta(n)$ and its worst case of $\Theta(n^2)$. 
+As such, we can determine the average case to be between those asymptotic
+complexities.
+
+When analyzing the above code for insertion, we can see that looking at the initial
+iterative loop, there exists a nested iterative loop with a terminating condition.
+With the best case, the nested loop does not run any time with a sorted list as the
+condition to run is not met, so the initial loop iterates a constant number of
+executions n times. However, we do not know if the nested loop terminates every time
+in the average case.
+
+Given the nested for-loop runs through some n iterations under the initial n iterations in the
+outer for-loop, the average case in the insertion sort algorithm is $\Theta(n^2)$.
